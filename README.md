@@ -139,12 +139,16 @@ Angularjs Directive for Neshan map (neshan.org) service - https://developers.nes
 
 # Step 4: insert the neshan directive
 
+#Html
 ```
     <neshan map-id="map"
             watch-map-type="watchMapType"
             output="map"
             add-marker="[35.6997793747305, 51.337409038769465]"></neshan>
-            
+````    
+
+#Controller
+````
         app.controller("ctrl", function ($scope) {
             $scope.map = {};
             $scope.watchMapType = null;
@@ -160,7 +164,8 @@ Angularjs Directive for Neshan map (neshan.org) service - https://developers.nes
             }, true);
         });            
             
-```
+````
+
  <table width="100%">
     <tr>
       <th>directive key</th>
