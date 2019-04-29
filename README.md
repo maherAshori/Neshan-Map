@@ -1,5 +1,5 @@
 # Neshan-Map
-Angularjs Directive for Neshan map (neshan.org) service
+Angularjs Directive for Neshan map (neshan.org) service - https://developers.neshan.org
 
 # Step 1: sources
 
