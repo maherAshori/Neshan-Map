@@ -1,5 +1,17 @@
-# Neshan-Map
+# Neshan-Map | v: 0.0.2
 Angularjs Directive for Neshan map (neshan.org) service - https://developers.neshan.org
+
+# New: all updates need service key *
+
+````
+- reverseGeocoding: get current details of marker point
+- direction: get direction from point A to Z
+- reverseDirection: reverse direction from Z to A
+````
+
+# update:
+
+update night mode polyline change from `blue` to `white`
 
 # Step 1: sources
 
@@ -32,7 +44,11 @@ Angularjs Directive for Neshan map (neshan.org) service - https://developers.nes
           singleMarker: true,
           search: true,
           poi: true,
-          traffic: true
+          traffic: true,
+          //---v: 0.0.2
+          reverseGeocoding: true,
+          direction: false,
+          reverseDirection: false
       });
     });
  ````
@@ -133,6 +149,27 @@ Angularjs Directive for Neshan map (neshan.org) service - https://developers.nes
     <td>used for search input text box placeholder</td>
     <td>string</td>
     <td>'place'</td>
+    <td>false</td>
+  </tr>    
+  <tr>
+    <td>reverseGeocoding</td>
+    <td>get current point details of the marker</td>
+    <td>bool</td>
+    <td>false</td>
+    <td>false</td>
+  </tr>    
+  <tr>
+    <td>direction</td>
+    <td>get direction from point A to Z</td>
+    <td>bool</td>
+    <td>false</td>
+    <td>false</td>
+  </tr>  
+  <tr>
+    <td>reverseDirection</td>
+    <td>reverse direction from point Z to A</td>
+    <td>bool</td>
+    <td>false</td>
     <td>false</td>
   </tr>     
 </table> 
