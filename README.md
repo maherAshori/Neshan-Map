@@ -20,6 +20,8 @@ update night mode polyline change from `blue` to `white`
 
 <script src="https://static.neshan.org/sdk/leaflet/1.4.0/leaflet.js" type="text/javascript"></script>
 
+<script src="Polyline.encoded.js"></script>
+
 <script src="neshan.js"></script>
 ````
 
